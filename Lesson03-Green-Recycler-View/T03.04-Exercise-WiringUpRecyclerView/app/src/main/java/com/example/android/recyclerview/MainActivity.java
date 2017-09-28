@@ -35,10 +35,11 @@ public class MainActivity extends AppCompatActivity {
         mNumbersList = (RecyclerView) findViewById(R.id.rv_numbers);
 
         LinearLayoutManager LayoutManager = new LinearLayoutManager(this);
-
         mNumbersList.setLayoutManager(LayoutManager);
 
         mNumbersList.setHasFixedSize(true);
+
+
 
         mAdapter = new GreenAdapter(NUM_LIST_ITEMS);
 
